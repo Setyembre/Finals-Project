@@ -1,0 +1,290 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pics/landing bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: large;
+}
+
+header {
+    background-color: #33333394;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+.hero-content {
+  font-size: 1.5em; /* or 1.5rem */
+}
+
+.logo {
+  width: 50px; /* adjust the width to your liking */
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: auto;
+  gap: 1px;
+}
+
+header nav ul li {
+    margin-right: 10em;
+}
+
+header nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.cta-button {
+    background-color: #ffffff05;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+  
+  .nav-item {
+    position: relative;
+  }
+  
+
+
+  nav ul li a {
+    background-color: #ffffff05; /* same background color as the contact button */
+    color: #fff; /* same text color as the contact button */
+    padding: 10px 20px; /* add some padding to make it look like a button */
+    border: none; /* remove the default link border */
+    border-radius: 5px; /* add a slight curve to the corners */
+    text-decoration: none; /* remove the default link underline */
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* change the background color on hover */
+  }
+  .fas.fa-chevron-down {
+    margin-left: 5px;
+  }
+  /* Services Sidebar */
+#servicesSidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: none;
+}
+
+#servicesSidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+#servicesSidebar h2 {
+    margin-top: 0;
+}
+
+#servicesSidebar .services-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#servicesSidebar .services-list li {
+    margin-bottom: 10px;
+}
+
+#servicesSidebar .services-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#servicesSidebar .services-list a:hover {
+    color: #ccc;
+}
+#supportSidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: none;
+  z-index: 1000; /* Adjusted z-index to 1000 */
+  transition: width 0.5s, opacity 0.5s;
+  animation: openSidebar 0.5s ease-in-out;
+}
+@keyframes openSidebar {
+  from {
+      width: 0;
+  }
+  to {
+      width: 20em;
+  }
+}
+@keyframes closeSidebar {
+  from {
+      width: 0;
+  }
+  to {
+      width: 20em;
+  }
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000; /* Adjusted z-index to 1000 */
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 20px;
+  left: 0; /* Adjusted to 0px */
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar h2, .sidebar h3 {
+  padding-left: 20px;
+  color: #f1f1f1;
+}
+
+.contact-info, .support-links, .quick-actions {
+  padding: 20px;
+}
+
+.contact-info p, .support-links a, .quick-actions button {
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.support-links a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.support-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.quick-actions button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.quick-actions button:hover {
+  background-color: #777;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh; /* Set the minimum height to the viewport height */
+}
+
+#supportSidebar.open {
+  width: 20em;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+#contact-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#contact-btn:hover {
+  background-color: #555;
+}
+.welcome-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.welcome-message h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-message p {
+  font-size: 18px;
+  line-height: 1.5;
+}
